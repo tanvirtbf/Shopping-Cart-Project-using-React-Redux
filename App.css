@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1180px;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 0px 0px 15px rgb(182, 15, 15);
+}
+.brandName{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+}
+.logo{
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.cartlist, .wishlist{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+}
