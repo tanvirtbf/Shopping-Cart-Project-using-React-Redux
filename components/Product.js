@@ -15,7 +15,7 @@ export default function Product({ productId, title, rating, price, imageUrl }) {
         </h3>
       </div>
       <div className="price-rating-container">
-        <p className="rating">{+rating} ★ ★ ★ ★</p>
+        <p className="rating">{rating} ★ ★ ★ ★</p>
         <p className="price">${price}</p>
       </div>
       <div className="cta-container">

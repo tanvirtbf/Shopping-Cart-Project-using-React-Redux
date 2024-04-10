@@ -17,8 +17,8 @@ export default function Header() {
         <h1>
           <Link to="/">Tanvir Shop</Link>
         </h1>
-        <Link className="cart-icon" to="/cart">
-          <img src={WishListIcon} alt="cart-icon" />
+        <Link className="cart-icon" to="/wishlist">
+          <img src={WishListIcon} alt="wishlist-icon" />
           <div className="cart-items-count">{wishList.reduce((prev,curr) => prev+curr.quantity , 0)}</div>
         </Link>
         <Link className="cart-icon" to="/cart">
