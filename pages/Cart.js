@@ -19,6 +19,7 @@ export default function Cart() {
         {cartItems.map(({ productId, title, rating, price, imageUrl, quantity }) => (
           <CartItem
             key={productId}
+            productId={productId}
             title={title}
             price={price}
             quantity={quantity}
@@ -30,7 +31,7 @@ export default function Cart() {
           <div></div>
           <div></div>
           <div></div>
-          <div className="total">$500</div>
+          <div className="total">${cartItems.reduce((prev, curr) => prev + (curr.quantity * curr.price) , 0)}</div>
         </div>
       </div>
     </div>
