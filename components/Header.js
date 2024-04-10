@@ -1,31 +1,23 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import CartIcon from '../assets/cart-icon.svg'
 import WishListIcon from '../assets/wishlist.png'
-import { useSelector } from 'react-redux'
-
-
 
 export default function Header() {
-  const cartItems = useSelector((state) => state.cartItems)
-  // console.log(cartItems)
-  const wishList = useSelector((state) => state.wishList)
-  console.log(wishList)
   return (
-    <header>
-      <div className="header-contents">
-        <h1>
-          <Link to="/">Tanvir Shop</Link>
-        </h1>
-        <Link className="cart-icon" to="/wishlist">
-          <img src={WishListIcon} alt="wishlist-icon" />
-          <div className="cart-items-count">{wishList.reduce((prev,curr) => prev+curr.quantity , 0)}</div>
-        </Link>
-        <Link className="cart-icon" to="/cart">
-          <img src={CartIcon} alt="cart-icon" />
-          <div className="cart-items-count">{cartItems.reduce((prev,curr) => prev+curr.quantity , 0)}</div>
-        </Link>
+    <div className='header'>
+      <div className="brandName">
+        <h1>Tanvir Shop</h1>
       </div>
-    </header>
+      <div className='logo'>
+        <div className='wishlist'>
+          <h2>0</h2>
+          <img src={CartIcon} alt="cart-icon" />
+        </div>
+        <div className='cartlist'>
+          <h2>0</h2>
+          <img src={WishListIcon} alt="wishlist-icon" />
+        </div>
+      </div>
+    </div>
   )
 }
