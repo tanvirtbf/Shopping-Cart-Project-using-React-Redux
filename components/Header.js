@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import CartIcon from '../assets/cart-icon.svg'
 
+
 export default function Header() {
   return (
     <header>
