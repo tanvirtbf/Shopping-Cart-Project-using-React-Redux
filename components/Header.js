@@ -8,7 +8,7 @@ export default function Header() {
     <header>
       <div className="header-contents">
         <h1>
-          <Link to="/">Shopee</Link>
+          <Link to="/">Tanvir Shop</Link>
         </h1>
         <Link className="cart-icon" to="/cart">
           <img src={CartIcon} alt="cart-icon" />
